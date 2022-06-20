@@ -1,0 +1,1372 @@
+2022-06-19 22:00:11,893 INFO:Crawling: https://espana2000.es/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  127.0.0.1:9050 <--denied
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-19 22:00:18,567 INFO:Crawling: #site-content
+2022-06-19 22:00:18,567 ERROR:Failed to crawl: #site-content
+Traceback (most recent call last):
+  File "/root/PycharmProjects/spider/spider_2.py", line 43, in run
+    self.crawl(url)
+  File "/root/PycharmProjects/spider/spider_2.py", line 34, in crawl
+    html = self.download_url(url)
+  File "/root/PycharmProjects/spider/spider_2.py", line 19, in download_url
+    return requests.get(url).text
+  File "/usr/lib/python3/dist-packages/requests/api.py", line 75, in get
+    return request('get', url, params=params, **kwargs)
+  File "/usr/lib/python3/dist-packages/requests/api.py", line 61, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/usr/lib/python3/dist-packages/requests/sessions.py", line 515, in request
+    prep = self.prepare_request(req)
+  File "/usr/lib/python3/dist-packages/requests/sessions.py", line 443, in prepare_request
+    p.prepare(
+  File "/usr/lib/python3/dist-packages/requests/models.py", line 318, in prepare
+    self.prepare_url(url, params)
+  File "/usr/lib/python3/dist-packages/requests/models.py", line 392, in prepare_url
+    raise MissingSchema(error)
+requests.exceptions.MissingSchema: Invalid URL '#site-content': No scheme supplied. Perhaps you meant http://#site-content?
+2022-06-19 22:00:18,571 INFO:Crawling: https://espana2000.es/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-19 22:00:26,565 INFO:Crawling: https://espana2000.es/quienes-somos/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-19 22:00:35,809 INFO:Crawling: https://espana2000.es/presentacion/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-19 22:00:42,097 INFO:Crawling: https://espana2000.es/que-significa-nuestro-nombre/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-19 22:00:48,484 INFO:Crawling: https://espana2000.es/programa-politico/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-19 22:00:56,701 INFO:Crawling: https://espana2000.es/category/documentos/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-19 22:01:03,497 INFO:Crawling: https://espana2000.es/category/juntas-locales/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-19 22:01:11,862 INFO:Crawling: https://espana2000.es/blog/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-19 22:01:19,409 INFO:Crawling: https://espana2000.es/contacto/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-19 22:01:28,849 INFO:Crawling: https://www.facebook.com/Espana2000/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  www.facebook.com:443  ...  OK
+2022-06-19 22:01:38,145 INFO:Crawling: https://twitter.com/#!/Espana_2000
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  twitter.com:443  ...  OK
+2022-06-19 22:01:45,227 INFO:Crawling: mailto:secretaria@espana2000.org
+2022-06-19 22:01:45,227 ERROR:Failed to crawl: mailto:secretaria@espana2000.org
+Traceback (most recent call last):
+  File "/root/PycharmProjects/spider/spider_2.py", line 43, in run
+    self.crawl(url)
+  File "/root/PycharmProjects/spider/spider_2.py", line 34, in crawl
+    html = self.download_url(url)
+  File "/root/PycharmProjects/spider/spider_2.py", line 19, in download_url
+    return requests.get(url).text
+  File "/usr/lib/python3/dist-packages/requests/api.py", line 75, in get
+    return request('get', url, params=params, **kwargs)
+  File "/usr/lib/python3/dist-packages/requests/api.py", line 61, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/usr/lib/python3/dist-packages/requests/sessions.py", line 529, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/usr/lib/python3/dist-packages/requests/sessions.py", line 639, in send
+    adapter = self.get_adapter(url=request.url)
+  File "/usr/lib/python3/dist-packages/requests/sessions.py", line 732, in get_adapter
+    raise InvalidSchema("No connection adapters were found for {!r}".format(url))
+requests.exceptions.InvalidSchema: No connection adapters were found for 'mailto:secretaria@espana2000.org'
+2022-06-19 22:01:45,228 INFO:Crawling: https://espana2000.es/afiliate/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-19 22:01:52,960 INFO:Crawling: https://espana2000.es/2022/06/20/le-llamaban-la-madrina/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-19 22:01:59,982 INFO:Crawling: https://espana2000.es/2022/06/17/la-caceria-de-la-extrema-derecha/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-19 22:02:07,173 INFO:Crawling: https://espana2000.es/2022/06/12/el-padre-de-putas/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-19 22:02:14,368 INFO:Crawling: https://espana2000.es/2022/06/09/representacion-teatral-la-bruja-sin-verguenza/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-19 22:02:22,456 INFO:Crawling: https://espana2000.es/2022/06/05/papeles-para-todos-todas-y-todes/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-19 22:02:32,328 INFO:Crawling: https://espana2000.es/2022/06/03/denunciamos-por-prevaricacion-a-2-altos-cargos-de-la-generalitat/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-19 22:02:49,319 INFO:Crawling: https://espana2000.es/page/2/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-19 22:03:08,741 INFO:Crawling: https://espana2000.es/page/3/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-19 22:03:12,297 INFO:Crawling: https://espana2000.es/page/10/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-19 22:03:14,377 INFO:Crawling: https://espana2000.es/los-espanoles-primero/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-19 22:03:16,242 INFO:Crawling: https://espana2000.es/espana-grande/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-19 22:03:17,955 INFO:Crawling: https://espana2000.es/banca-publica/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-19 22:03:20,299 INFO:Crawling: https://espana2000.es
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-19 22:03:22,444 INFO:Crawling: https://espana2000.es/aviso-legal
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-19 22:03:24,812 INFO:Crawling: https://espana2000.es/politica-privacidad
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-19 22:03:28,060 INFO:Crawling: https://espana2000.es/quienes-somos/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-19 22:03:30,637 INFO:Crawling: None
+2022-06-19 22:03:30,638 ERROR:Failed to crawl: None
+Traceback (most recent call last):
+  File "/root/PycharmProjects/spider/spider_2.py", line 43, in run
+    self.crawl(url)
+  File "/root/PycharmProjects/spider/spider_2.py", line 34, in crawl
+    html = self.download_url(url)
+  File "/root/PycharmProjects/spider/spider_2.py", line 19, in download_url
+    return requests.get(url).text
+  File "/usr/lib/python3/dist-packages/requests/api.py", line 75, in get
+    return request('get', url, params=params, **kwargs)
+  File "/usr/lib/python3/dist-packages/requests/api.py", line 61, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/usr/lib/python3/dist-packages/requests/sessions.py", line 515, in request
+    prep = self.prepare_request(req)
+  File "/usr/lib/python3/dist-packages/requests/sessions.py", line 443, in prepare_request
+    p.prepare(
+  File "/usr/lib/python3/dist-packages/requests/models.py", line 318, in prepare
+    self.prepare_url(url, params)
+  File "/usr/lib/python3/dist-packages/requests/models.py", line 392, in prepare_url
+    raise MissingSchema(error)
+requests.exceptions.MissingSchema: Invalid URL 'None': No scheme supplied. Perhaps you meant http://None?
+2022-06-19 22:03:30,638 INFO:Crawling: https://espana2000.es/presentacion/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-19 22:03:32,332 INFO:Crawling: http://espana2000.org/?page_id=41
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.org:80  ...  OK
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.org:443  ...  OK
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  www.espana2000.es:80  ...  OK
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  www.espana2000.es:443  ...  OK
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-19 22:03:40,074 INFO:Crawling: http://espana2000.org/?page_id=2
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.org:80  ...  OK
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.org:443  ...  OK
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  www.espana2000.es:80  ...  OK
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  www.espana2000.es:443  ...  OK
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-19 22:03:47,111 INFO:Crawling: https://espana2000.es/presentacion/#comment-717
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-19 22:03:48,858 INFO:Crawling: https://espana2000.es/presentacion/?replytocom=717#respond
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-19 22:03:50,654 INFO:Crawling: https://espana2000.es/presentacion/#respond
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-19 22:03:52,242 INFO:Crawling: https://espana2000.es/que-significa-nuestro-nombre/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-19 22:03:54,104 INFO:Crawling: https://espana2000.es/programa-politico/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-19 22:03:55,829 INFO:Crawling: http://www.amazon.es/gp/product/B00WFF2DSU
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  www.amazon.es:80  ...  OK
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  www.amazon.es:443  ...  OK
+2022-06-19 22:03:57,500 INFO:Crawling: https://twitter.com/HdezCogollo
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  twitter.com:443  ...  OK
+2022-06-19 22:03:59,021 INFO:Crawling: https://espana2000.es/category/documentos/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-19 22:04:02,024 INFO:Crawling: https://espana2000.es/2021/05/17/la-tercera-posicion/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-19 22:04:06,524 INFO:Crawling: https://espana2000.es/author/davidu/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-19 22:04:08,478 INFO:Crawling: https://espana2000.es/category/activismo/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-19 22:04:10,627 INFO:Crawling: https://espana2000.es/category/prensa/comunicados/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-19 22:04:12,660 INFO:Crawling: https://espana2000.es/2019/07/20/espana-2000-celebrara-su-v-congreso-en-el-otono-de-2019-2/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-19 22:04:14,683 INFO:Crawling: https://espana2000.es/author/jose/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-19 22:04:20,653 INFO:Crawling: https://espana2000.es/tag/2019/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-19 22:04:24,714 INFO:Crawling: https://espana2000.es/tag/congreso/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-19 22:04:28,937 INFO:Crawling: https://espana2000.es/tag/espana2000/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-19 22:04:33,387 INFO:Crawling: https://espana2000.es/tag/rafael-ripoll/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-19 22:04:37,352 INFO:Crawling: https://espana2000.es/category/activismo/campanas/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-19 22:04:41,196 INFO:Crawling: https://espana2000.es/category/multimedia/propaganda/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-19 22:04:43,643 INFO:Crawling: https://espana2000.es/2018/05/15/reunion-del-consejo-ejecutivo-de-respeto-en-zaragoza/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-19 22:04:45,115 INFO:Crawling: https://espana2000.es/tag/ayuda-a-espanoles/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-19 22:04:47,177 INFO:Crawling: https://espana2000.es/tag/fuensanta-martin/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-19 22:04:49,009 INFO:Crawling: https://espana2000.es/tag/mario-martos/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-19 22:04:51,474 INFO:Crawling: https://espana2000.es/tag/respeto/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-19 22:04:55,643 INFO:Crawling: https://espana2000.es/tag/reuniones-de-equipo/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-19 22:04:57,201 INFO:Crawling: https://espana2000.es/tag/zaragoza/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-19 22:04:58,928 INFO:Crawling: https://espana2000.es/category/activismo/manifestaciones/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-19 22:05:00,947 INFO:Crawling: https://espana2000.es/category/politica-municipal/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-19 22:05:02,648 INFO:Crawling: https://espana2000.es/category/prensa/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-19 22:05:04,591 INFO:Crawling: https://espana2000.es/2017/12/05/espana2000-apoya-la-equiparacion-salarial-que-reclaman-policias-y-guardias-civiles/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-19 22:05:08,730 INFO:Crawling: https://espana2000.es/category/colabora-con-nosotros/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-19 22:05:12,134 INFO:Crawling: https://espana2000.es/category/multimedia/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-19 22:05:14,407 INFO:Crawling: https://espana2000.es/2017/10/30/el-2-de-mayo-catalan/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-19 22:05:17,653 INFO:Crawling: https://espana2000.es/tag/1-de-octubre/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-19 22:05:19,332 INFO:Crawling: https://espana2000.es/tag/2-de-mayo/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-19 22:05:22,745 INFO:Crawling: https://espana2000.es/tag/cataluna/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-19 22:05:24,445 INFO:Crawling: https://espana2000.es/tag/separatismo/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-19 22:05:27,956 INFO:Crawling: https://espana2000.es/2017/09/07/junts-fem-forca-el-referendum-de-la-casta-no-es-para-cataluna/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-19 22:05:29,967 INFO:Crawling: https://espana2000.es/category/prensa/apariciones/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-19 22:05:31,636 INFO:Crawling: https://espana2000.es/2017/07/11/se-acabo-la-impunidad-condena-a-ynestrillas-por-injurias-contra-jose-luis-roberto/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-19 22:05:33,239 INFO:Crawling: https://espana2000.es/2017/06/08/la-nueva-esclavitud-laboral-uber-y-cabify/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-19 22:05:36,632 INFO:Crawling: https://espana2000.es/category/mujer/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-19 22:05:38,297 INFO:Crawling: https://espana2000.es/2017/03/09/somos-mujeres-somos-espanolas/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-19 22:05:47,700 INFO:Crawling: https://espana2000.es/category/activismo/ayuda-a-espanoles/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-19 22:05:51,366 INFO:Crawling: https://espana2000.es/2017/02/28/espana2000-con-los-estibadores/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-19 22:05:53,180 INFO:Crawling: https://espana2000.es/tag/defensa-derechos/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-19 22:05:54,931 INFO:Crawling: https://espana2000.es/tag/derechos-laborales/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-19 22:05:56,503 INFO:Crawling: https://espana2000.es/tag/espana/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-19 22:05:58,403 INFO:Crawling: https://espana2000.es/tag/estibadores/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-19 22:06:00,470 INFO:Crawling: https://espana2000.es/category/documentos/page/2/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-19 22:06:02,429 INFO:Crawling: https://espana2000.es/category/documentos/page/6/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-19 22:06:04,132 INFO:Crawling: https://espana2000.es/category/juntas-locales/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-19 22:06:06,629 INFO:Crawling: https://espana2000.es/2022/05/16/fiestas-de-san-isidro-en-los-santos-de-la-humosa/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-19 22:06:08,861 INFO:Crawling: https://espana2000.es/2022/05/15/esther-romero-nueva-delegada-de-espana-2000-en-la-comarca-valenciana-de-lhorta-nord/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-19 22:06:10,693 INFO:Crawling: https://espana2000.es/2022/02/20/espana-2000-con-nuestros-mayores/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-19 22:06:12,550 INFO:Crawling: https://espana2000.es/2021/10/12/dia-de-la-hispanidad-en-onda/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-19 22:06:14,372 INFO:Crawling: https://espana2000.es/2021/03/06/jose-francisco-borja-esteve-nuevo-presidente-de-espana-2000-sollana/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-19 22:06:15,909 INFO:Crawling: https://espana2000.es/2021/02/11/espana-2000-solicita-la-construccion-de-un-hospital-en-la-comarca-de-la-ribera-baja/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-19 22:06:17,532 INFO:Crawling: https://espana2000.es/tag/hospital/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-19 22:06:19,854 INFO:Crawling: https://espana2000.es/tag/ribera-baja/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-19 22:06:20,589 INFO:Crawling: https://espana2000.es/tag/sollana/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-19 22:06:23,657 INFO:Crawling: https://espana2000.es/category/multimedia/videos/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-19 22:06:26,385 INFO:Crawling: https://espana2000.es/2021/01/28/se-constituye-nueva-junta-local-en-alzira/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-19 22:06:28,294 INFO:Crawling: https://espana2000.es/tag/alzira/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-19 22:06:30,419 INFO:Crawling: https://espana2000.es/2020/12/16/firma-del-primer-convenio-laboral-en-la-historia-de-los-santos-de-la-humosa/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-19 22:06:32,186 INFO:Crawling: https://espana2000.es/2020/11/27/reunion-de-trabajo-en-los-santos-de-la-humosa/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-19 22:06:33,835 INFO:Crawling: https://espana2000.es/2020/08/30/tradicional-subida-de-la-virgen-de-la-humosa/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-19 22:06:35,489 INFO:Crawling: https://espana2000.es/category/juntas-locales/page/2/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-19 22:06:37,629 INFO:Crawling: https://espana2000.es/category/juntas-locales/page/25/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-19 22:06:39,448 INFO:Crawling: https://espana2000.es/blog/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-19 22:06:41,043 INFO:Crawling: https://espana2000.es/blog/2/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-19 22:06:43,007 INFO:Crawling: https://espana2000.es/blog/3/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-19 22:06:45,267 INFO:Crawling: https://espana2000.es/blog/10/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-19 22:06:47,482 INFO:Crawling: https://espana2000.es/contacto/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-19 22:06:49,231 INFO:Crawling: https://espana2000.es/politica-privacidad/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-19 22:06:51,252 INFO:Crawling: #
+2022-06-19 22:06:51,252 ERROR:Failed to crawl: #
+Traceback (most recent call last):
+  File "/root/PycharmProjects/spider/spider_2.py", line 43, in run
+    self.crawl(url)
+  File "/root/PycharmProjects/spider/spider_2.py", line 34, in crawl
+    html = self.download_url(url)
+  File "/root/PycharmProjects/spider/spider_2.py", line 19, in download_url
+    return requests.get(url).text
+  File "/usr/lib/python3/dist-packages/requests/api.py", line 75, in get
+    return request('get', url, params=params, **kwargs)
+  File "/usr/lib/python3/dist-packages/requests/api.py", line 61, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/usr/lib/python3/dist-packages/requests/sessions.py", line 515, in request
+    prep = self.prepare_request(req)
+  File "/usr/lib/python3/dist-packages/requests/sessions.py", line 443, in prepare_request
+    p.prepare(
+  File "/usr/lib/python3/dist-packages/requests/models.py", line 318, in prepare
+    self.prepare_url(url, params)
+  File "/usr/lib/python3/dist-packages/requests/models.py", line 392, in prepare_url
+    raise MissingSchema(error)
+requests.exceptions.MissingSchema: Invalid URL '#': No scheme supplied. Perhaps you meant http://#?
+2022-06-19 22:06:51,253 INFO:Crawling: https://www.facebook.com/recover/initiate/?ars=facebook_login
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  www.facebook.com:443  ...  OK
+2022-06-19 22:06:53,012 INFO:Crawling: https://www.facebook.com/r.php?next=https%3A%2F%2Fwww.facebook.com%2FEspana2000%2F&locale=nl_NL&display=page
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  www.facebook.com:443  ...  OK
+2022-06-19 22:06:54,680 INFO:Crawling: https://fy-nl.facebook.com/login/?next=https%3A%2F%2Fwww.facebook.com%2FEspana2000%2F
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  fy-nl.facebook.com:443  ...  OK
+2022-06-19 22:06:56,377 INFO:Crawling: https://www.facebook.com/login/?next=https%3A%2F%2Fwww.facebook.com%2FEspana2000%2F
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  www.facebook.com:443  ...  OK
+2022-06-19 22:06:58,107 INFO:Crawling: https://pl-pl.facebook.com/login/?next=https%3A%2F%2Fwww.facebook.com%2FEspana2000%2F
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  pl-pl.facebook.com:443  ...  OK
+2022-06-19 22:06:59,303 INFO:Crawling: https://tr-tr.facebook.com/login/?next=https%3A%2F%2Fwww.facebook.com%2FEspana2000%2F
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  tr-tr.facebook.com:443  ...  OK
+2022-06-19 22:07:00,460 INFO:Crawling: https://de-de.facebook.com/login/?next=https%3A%2F%2Fwww.facebook.com%2FEspana2000%2F
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  de-de.facebook.com:443  ...  OK
+2022-06-19 22:07:01,931 INFO:Crawling: https://fr-fr.facebook.com/login/?next=https%3A%2F%2Fwww.facebook.com%2FEspana2000%2F
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  fr-fr.facebook.com:443  ...  OK
+2022-06-19 22:07:03,530 INFO:Crawling: https://ar-ar.facebook.com/login/?next=https%3A%2F%2Fwww.facebook.com%2FEspana2000%2F
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  ar-ar.facebook.com:443  ...  OK
+2022-06-19 22:07:04,761 INFO:Crawling: https://es-la.facebook.com/login/?next=https%3A%2F%2Fwww.facebook.com%2FEspana2000%2F
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  es-la.facebook.com:443  ...  OK
+2022-06-19 22:07:06,413 INFO:Crawling: https://pt-br.facebook.com/login/?next=https%3A%2F%2Fwww.facebook.com%2FEspana2000%2F
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  pt-br.facebook.com:443  ...  OK
+2022-06-19 22:07:08,142 INFO:Crawling: https://it-it.facebook.com/login/?next=https%3A%2F%2Fwww.facebook.com%2FEspana2000%2F
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  it-it.facebook.com:443  ...  OK
+2022-06-19 22:07:10,097 INFO:Crawling: https://www.facebook.com/reg/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  www.facebook.com:443  ...  OK
+2022-06-19 22:07:12,851 INFO:Crawling: https://www.facebook.com/login/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  www.facebook.com:443  ...  OK
+2022-06-19 22:07:18,505 INFO:Crawling: https://messenger.com/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  messenger.com:443  ...  OK
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  www.messenger.com:443  ...  OK
+2022-06-19 22:07:23,966 INFO:Crawling: https://www.facebook.com/lite/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  www.facebook.com:443  ...  OK
+2022-06-19 22:07:25,349 INFO:Crawling: https://www.facebook.com/watch/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  www.facebook.com:443  ...  OK
+2022-06-19 22:07:27,249 INFO:Crawling: https://www.facebook.com/places/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  www.facebook.com:443  ...  OK
+2022-06-19 22:07:28,709 INFO:Crawling: https://www.facebook.com/games/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  www.facebook.com:443  ...  OK
+2022-06-19 22:07:30,685 INFO:Crawling: https://www.facebook.com/marketplace/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  www.facebook.com:443  ...  OK
+2022-06-19 22:07:32,351 INFO:Crawling: https://pay.facebook.com/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  pay.facebook.com:443  ...  OK
+2022-06-19 22:07:34,460 INFO:Crawling: https://www.oculus.com/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  www.oculus.com:443  ...  OK
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  store.facebook.com:443  ...  OK
+2022-06-19 22:07:38,234 INFO:Crawling: https://portal.facebook.com/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  portal.facebook.com:443  ...  OK
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  store.facebook.com:443  ...  OK
+2022-06-19 22:07:42,278 INFO:Crawling: https://l.facebook.com/l.php?u=https%3A%2F%2Fwww.instagram.com%2F&h=AT2yHGtxliRXtw1vPp_J86XKO-94y6Mbfj_qp5kcJ43EI3dfYJmAPzlv7xkFQax--vZGOnJQurH-eE9fQrIFQTXxNZi9b5P_H97vwT-EQMXnHWT-cC4Myl4gwpL0WKJrtE2swgLDKpwtFg-V
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  l.facebook.com:443  ...  OK
+2022-06-19 22:07:43,588 INFO:Crawling: https://www.bulletin.com/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  www.bulletin.com:443  ...  OK
+2022-06-19 22:07:45,120 INFO:Crawling: https://www.facebook.com/local/lists/245019872666104/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  www.facebook.com:443  ...  OK
+2022-06-19 22:07:47,327 INFO:Crawling: https://www.facebook.com/fundraisers/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  www.facebook.com:443  ...  OK
+2022-06-19 22:07:49,558 INFO:Crawling: https://www.facebook.com/biz/directory/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  www.facebook.com:443  ...  OK
+2022-06-19 22:07:51,830 INFO:Crawling: https://www.facebook.com/votinginformationcenter/?entry_point=c2l0ZQ%3D%3D
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  www.facebook.com:443  ...  OK
+2022-06-19 22:07:53,365 INFO:Crawling: https://www.facebook.com/groups/explore/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  www.facebook.com:443  ...  OK
+2022-06-19 22:07:54,891 INFO:Crawling: https://about.facebook.com/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  about.facebook.com:443  ...  OK
+2022-06-19 22:07:58,259 INFO:Crawling: https://www.facebook.com/ad_campaign/landing.php?placement=pflo&campaign_id=402047449186&nav_source=unknown&extra_1=auto
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  www.facebook.com:443  ...  OK
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  l.facebook.com:443  ...  OK
+2022-06-19 22:08:01,323 INFO:Crawling: https://www.facebook.com/pages/create/?ref_type=site_footer
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  www.facebook.com:443  ...  OK
+2022-06-19 22:08:02,532 INFO:Crawling: https://developers.facebook.com/?ref=pf
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  developers.facebook.com:443  ...  OK
+2022-06-19 22:08:05,889 INFO:Crawling: https://www.facebook.com/careers/?ref=pf
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  www.facebook.com:443  ...  OK
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  www.facebookcareers.com:443  ...  OK
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  www.metacareers.com:443  ...  OK
+2022-06-19 22:08:13,919 INFO:Crawling: https://www.facebook.com/privacy/explanation/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  www.facebook.com:443  ...  OK
+2022-06-19 22:08:16,033 INFO:Crawling: https://www.facebook.com/policies/cookies/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  www.facebook.com:443  ...  OK
+2022-06-19 22:08:17,402 INFO:Crawling: https://www.facebook.com/help/568137493302217
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  www.facebook.com:443  ...  OK
+2022-06-19 22:08:18,496 INFO:Crawling: https://www.facebook.com/policies?ref=pf
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  www.facebook.com:443  ...  OK
+2022-06-19 22:08:20,742 INFO:Crawling: https://www.facebook.com/help/?ref=pf
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  www.facebook.com:443  ...  OK
+2022-06-19 22:08:22,537 INFO:Crawling: help/637205020878504
+2022-06-19 22:08:22,538 ERROR:Failed to crawl: help/637205020878504
+Traceback (most recent call last):
+  File "/root/PycharmProjects/spider/spider_2.py", line 43, in run
+    self.crawl(url)
+  File "/root/PycharmProjects/spider/spider_2.py", line 34, in crawl
+    html = self.download_url(url)
+  File "/root/PycharmProjects/spider/spider_2.py", line 19, in download_url
+    return requests.get(url).text
+  File "/usr/lib/python3/dist-packages/requests/api.py", line 75, in get
+    return request('get', url, params=params, **kwargs)
+  File "/usr/lib/python3/dist-packages/requests/api.py", line 61, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/usr/lib/python3/dist-packages/requests/sessions.py", line 515, in request
+    prep = self.prepare_request(req)
+  File "/usr/lib/python3/dist-packages/requests/sessions.py", line 443, in prepare_request
+    p.prepare(
+  File "/usr/lib/python3/dist-packages/requests/models.py", line 318, in prepare
+    self.prepare_url(url, params)
+  File "/usr/lib/python3/dist-packages/requests/models.py", line 392, in prepare_url
+    raise MissingSchema(error)
+requests.exceptions.MissingSchema: Invalid URL 'help/637205020878504': No scheme supplied. Perhaps you meant http://help/637205020878504?
+2022-06-19 22:08:22,538 INFO:Crawling: https://www.facebook.com/settings
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  www.facebook.com:443  ...  OK
+2022-06-19 22:08:24,240 INFO:Crawling: https://www.facebook.com/allactivity?privacy_source=activity_log_top_menu
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  www.facebook.com:443  ...  OK
+2022-06-19 22:08:25,336 INFO:Crawling: https://help.twitter.com/using-twitter/twitter-supported-browsers
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  help.twitter.com:443  ...  OK
+2022-06-19 22:08:27,358 INFO:Crawling: https://twitter.com/tos
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  twitter.com:443  ...  OK
+2022-06-19 22:08:29,427 INFO:Crawling: https://twitter.com/privacy
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  twitter.com:443  ...  OK
+2022-06-19 22:08:31,517 INFO:Crawling: https://support.twitter.com/articles/20170514
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  support.twitter.com:443  ...  OK
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  help.twitter.com:443  ...  OK
+2022-06-19 22:08:34,810 INFO:Crawling: https://legal.twitter.com/imprint.html
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  legal.twitter.com:443  ...  OK
+2022-06-19 22:08:36,728 INFO:Crawling: https://business.twitter.com/en/help/troubleshooting/how-twitter-ads-work.html?ref=web-twc-ao-gbl-adsinfo&utm_source=twc&utm_medium=web&utm_campaign=ao&utm_content=adsinfo
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  business.twitter.com:443  ...  OK
+2022-06-19 22:08:38,538 INFO:Crawling: https://espana2000.es/afiliate/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-19 22:08:42,765 INFO:Crawling: https://espana2000.es/category/articulos/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-19 22:08:44,954 INFO:Crawling: https://espana2000.es/2022/06/20/le-llamaban-la-madrina/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-19 22:08:46,635 INFO:Crawling: https://lahemerotecadelbuitre.com/piezas/reunion-de-opositores-a-la-dictadura-franquista-en-munich-la-prensa-lo-bautiza-como-el-contubernio/#.Yq9BAXZBy5c
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  lahemerotecadelbuitre.com:443  ...  OK
+2022-06-19 22:08:47,641 INFO:Crawling: https://espana2000.es/tag/manifestaciones/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-19 22:08:49,803 INFO:Crawling: https://espana2000.es/2022/06/17/la-caceria-de-la-extrema-derecha/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-19 22:08:51,591 INFO:Crawling: https://espana2000.es/tag/monica-oltra/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-19 22:08:53,370 INFO:Crawling: https://espana2000.es/2022/06/12/el-padre-de-putas/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-19 22:08:55,885 INFO:Crawling: https://www.letrastraducidas.org/la-traviata-libiamo-neliete-calici/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  www.letrastraducidas.org:443  ...  OK
+2022-06-19 22:08:57,332 INFO:Crawling: https://espana2000.es/category/actividades/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-19 22:08:59,444 INFO:Crawling: https://espana2000.es/2022/06/09/representacion-teatral-la-bruja-sin-verguenza/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-19 22:09:01,201 INFO:Crawling: https://espana2000.es/wp-content/uploads/2022/06/0190_001-1.pdf
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-19 22:09:07,676 INFO:Crawling: https://espana2000.es/2022/06/05/papeles-para-todos-todas-y-todes/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-19 22:09:09,513 INFO:Crawling: https://espana2000.es/2022/06/03/denunciamos-por-prevaricacion-a-2-altos-cargos-de-la-generalitat/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-19 22:09:11,127 INFO:Crawling: http://espana2000.es/2022/05/11/la-justicia
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:80  ...  OK
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-19 22:09:14,950 INFO:Crawling: https://espana2000.es/2022/05/31/chad-vassily-y-tyrone-y-otros-fachas-del-monton/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-19 22:09:17,057 INFO:Crawling: https://espana2000.es/2022/05/30/colabora-con-la-resistencia/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-19 22:09:18,997 INFO:Crawling: https://espana2000.es/2022/05/23/el-chueca-virus-22/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-19 22:09:20,865 INFO:Crawling: https://espana2000.es/2022/05/16/escrache-a-pedro-sanchez-en-mislata/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-19 22:09:22,651 INFO:Crawling: https://espana2000.es/2022/05/16/chanel-n%e2%81%b05/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-19 22:09:27,927 INFO:Crawling: https://espana2000.es/page/4/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-19 22:09:36,903 INFO:Crawling: https://espana2000.es/2022/05/11/la-justicia-condena-a-la-generalitat-por-multar-a-dos-simpatizantes-nuestros-por-llevar-la-bandera-del-aguila/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-19 22:09:38,686 INFO:Crawling: https://espana2000.es/2022/05/09/la-espada-y-el-crisantemo/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-19 22:09:40,518 INFO:Crawling: https://espana2000.es/2022/05/02/cientos-de-patriotas-se-manifiestan-en-valencia-contra-el-gobierno-de-sanchez/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-19 22:09:42,276 INFO:Crawling: https://espana2000.es/2022/05/02/labor-omnia-vincit/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-19 22:09:45,452 INFO:Crawling: https://espana2000.es/2022/04/24/muchacho-la-marine-te-llama/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-19 22:09:47,647 INFO:Crawling: https://espana2000.es/page/5/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-19 22:09:49,427 INFO:Crawling: https://espana2000.es/2021/12/29/campana-contra-el-pasaporte-covid/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-19 22:09:51,002 INFO:Crawling: https://espana2000.es/2021/12/27/miles-de-personas-se-manifiestan-contra-el-pasaporte-covid-y-la-vacunacion-infantil/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-19 22:09:52,821 INFO:Crawling: https://espana2000.es/2021/12/26/mascarada/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-19 22:09:54,913 INFO:Crawling: https://espana2000.es/2021/12/20/vive-libre-o-muere/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-19 22:09:56,802 INFO:Crawling: https://espana2000.es/2021/12/19/manifestacion-contra-el-pasaporte-covid-y-la-vacunacion-infantil/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-19 22:09:58,560 INFO:Crawling: https://espana2000.es/2021/12/11/comida-de-navidad-2/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-19 22:10:02,034 INFO:Crawling: https://espana2000.es/page/8/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-19 22:10:03,776 INFO:Crawling: https://espana2000.es/page/9/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-19 22:10:05,858 INFO:Crawling: https://espana2000.es/los-espanoles-primero/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-19 22:10:07,913 INFO:Crawling: https://espana2000.es/espana-grande/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-19 22:10:09,661 INFO:Crawling: https://espana2000.es/banca-publica/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-19 22:10:11,367 INFO:Crawling: https://espana2000.es
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-19 22:10:13,429 INFO:Crawling: https://espana2000.es/aviso-legal
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-19 22:10:16,185 INFO:Crawling: https://espana2000.es/politica-privacidad
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-19 22:10:19,396 INFO:Crawling: http://espana2000.org/aviso-legal
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.org:80  ...  OK
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.org:443  ...  OK
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  www.espana2000.es:80  ...  OK
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  www.espana2000.es:443  ...  OK
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-19 22:10:26,227 INFO:Crawling: http://espana2000.org/politica-privacidad
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.org:80  ...  OK
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.org:443  ...  OK
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  www.espana2000.es:80  ...  OK
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  www.espana2000.es:443  ...  OK
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-19 22:10:32,950 INFO:Crawling: https://espana2000.es/presentacion/#comment-717
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-19 22:10:34,648 INFO:Crawling: https://espana2000.es/presentacion/?replytocom=717#respond
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-19 22:10:36,469 INFO:Crawling: #comment-717
+2022-06-19 22:10:36,469 ERROR:Failed to crawl: #comment-717
+Traceback (most recent call last):
+  File "/root/PycharmProjects/spider/spider_2.py", line 43, in run
+    self.crawl(url)
+  File "/root/PycharmProjects/spider/spider_2.py", line 34, in crawl
+    html = self.download_url(url)
+  File "/root/PycharmProjects/spider/spider_2.py", line 19, in download_url
+    return requests.get(url).text
+  File "/usr/lib/python3/dist-packages/requests/api.py", line 75, in get
+    return request('get', url, params=params, **kwargs)
+  File "/usr/lib/python3/dist-packages/requests/api.py", line 61, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/usr/lib/python3/dist-packages/requests/sessions.py", line 515, in request
+    prep = self.prepare_request(req)
+  File "/usr/lib/python3/dist-packages/requests/sessions.py", line 443, in prepare_request
+    p.prepare(
+  File "/usr/lib/python3/dist-packages/requests/models.py", line 318, in prepare
+    self.prepare_url(url, params)
+  File "/usr/lib/python3/dist-packages/requests/models.py", line 392, in prepare_url
+    raise MissingSchema(error)
+requests.exceptions.MissingSchema: Invalid URL '#comment-717': No scheme supplied. Perhaps you meant http://#comment-717?
+2022-06-19 22:10:36,469 INFO:Crawling: https://espana2000.es/presentacion/#respond
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-19 22:10:38,609 INFO:Crawling: https://www.amazon.es/gp/help/customer/display.html/ref=footer_cou?ie=UTF8&nodeId=200545940
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  www.amazon.es:443  ...  OK
+2022-06-19 22:10:39,954 INFO:Crawling: https://www.amazon.es/gp/help/customer/display.html/ref=footer_privacy?ie=UTF8&nodeId=200545460
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  www.amazon.es:443  ...  OK
+2022-06-19 22:10:41,275 INFO:Crawling: https://espana2000.es/2021/05/17/la-tercera-posicion/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-19 22:10:43,173 INFO:Crawling: https://espana2000.es/2021/05/16/marditos-roedores/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-19 22:10:45,011 INFO:Crawling: https://espana2000.es/2021/05/21/concentracion-frente-al-consulado-de-marruecos-en-valencia/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-19 22:10:47,169 INFO:Crawling: https://espana2000.es/author/davidu/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-19 22:10:49,509 INFO:Crawling: https://espana2000.es/author/davidu/page/2/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-19 22:10:51,390 INFO:Crawling: https://espana2000.es/author/davidu/page/26/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-19 22:10:53,120 INFO:Crawling: https://espana2000.es/category/activismo/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-19 22:10:54,951 INFO:Crawling: https://espana2000.es/tag/mislata/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-19 22:10:56,758 INFO:Crawling: https://espana2000.es/tag/predro-sanchez/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-19 22:10:58,505 INFO:Crawling: https://espana2000.es/tag/1-de-mayo/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-19 22:11:00,480 INFO:Crawling: https://espana2000.es/tag/agenda2030/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-19 22:11:03,843 INFO:Crawling: https://espana2000.es/tag/gobierno/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-19 22:11:05,619 INFO:Crawling: https://espana2000.es/2022/04/15/1-de-mayo-obrero-y-espanol/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-19 22:11:07,678 INFO:Crawling: https://espana2000.es/category/activismo/conferencias/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-19 22:11:10,590 INFO:Crawling: https://espana2000.es/2022/03/26/divisionarios-vistos-por-sus-hijos-por-carlos-caballero/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-19 22:11:12,527 INFO:Crawling: https://espana2000.es/2022/03/14/divisionarios-vistos-por-sus-hijos/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-19 22:11:14,388 INFO:Crawling: https://espana2000.es/2022/02/13/espana-2000-en-el-homenaje-a-la-division-azul/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-19 22:11:16,098 INFO:Crawling: https://espana2000.es/2022/01/28/cacerolada-contra-el-pasaporte-covid/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-19 22:11:17,786 INFO:Crawling: https://espana2000.es/tag/covid-19/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-19 22:11:19,686 INFO:Crawling: https://espana2000.es/tag/vacunacion/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-19 22:11:21,362 INFO:Crawling: https://espana2000.es/tag/valencia/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-19 22:11:23,019 INFO:Crawling: https://espana2000.es/tag/pasaporte/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-19 22:11:24,729 INFO:Crawling: https://espana2000.es/category/activismo/page/2/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-19 22:11:27,621 INFO:Crawling: https://espana2000.es/category/activismo/page/26/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-19 22:11:29,644 INFO:Crawling: https://espana2000.es/category/prensa/comunicados/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-19 22:11:31,444 INFO:Crawling: https://espana2000.es/2022/04/06/aclaracion-de-nuestro-presidente-nacional-sobre-el-caso-de-monica-oltra/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-19 22:11:33,252 INFO:Crawling: https://espana2000.es/2022/02/23/espana-2000-exige-la-retirada-de-la-calle-dedicada-a-joan-fuster-en-valencia/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-19 22:11:35,109 INFO:Crawling: https://espana2000.es/2021/12/02/informacion-comida-de-navidad/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-19 22:11:37,221 INFO:Crawling: https://espana2000.es/2021/11/28/comida-de-navidad/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-19 22:11:38,797 INFO:Crawling: https://espana2000.es/2021/11/24/no-al-certificado-covid/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-19 22:11:41,294 INFO:Crawling: https://espana2000.es/2021/11/12/cambio-de-itinerario-marcha-de-las-antorchas/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-19 22:11:43,353 INFO:Crawling: https://espana2000.es/2021/11/11/nos-cambian-el-itinerario-de-la-marcha-de-las-antorchas/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-19 22:11:45,249 INFO:Crawling: https://espana2000.es/2021/07/15/respuesta-a-la-informacion-falsa-publicada-por-publico/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-19 22:11:46,964 INFO:Crawling: https://espana2000.es/2021/04/30/manifiesto-1-de-mayo/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-19 22:11:48,694 INFO:Crawling: https://espana2000.es/tag/1demayo/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-19 22:11:50,275 INFO:Crawling: https://espana2000.es/2021/03/13/curso-de-defensa-personal-y-guerrilla-urbana/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-19 22:11:52,101 INFO:Crawling: https://espana2000.es/category/prensa/comunicados/page/2/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-19 22:11:53,742 INFO:Crawling: https://espana2000.es/category/prensa/comunicados/page/21/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-19 22:11:55,575 INFO:Crawling: https://espana2000.es/2019/07/20/espana-2000-celebrara-su-v-congreso-en-el-otono-de-2019-2/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-19 22:11:57,247 INFO:Crawling: https://espana2000.es/2019/03/26/espana2000-respeto-ante-el-reconocimiento-de-los-altos-del-golan-como-territorio-israeli/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-19 22:11:59,295 INFO:Crawling: https://espana2000.es/2020/02/11/con-alegria/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-19 22:12:01,125 INFO:Crawling: https://espana2000.es/author/jose/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-19 22:12:03,433 INFO:Crawling: https://espana2000.es/tag/estados-unidos/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-19 22:12:05,470 INFO:Crawling: https://espana2000.es/tag/internacional/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-19 22:12:08,487 INFO:Crawling: https://espana2000.es/tag/israel/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-19 22:12:10,326 INFO:Crawling: https://espana2000.es/tag/politic/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-19 22:12:12,589 INFO:Crawling: https://espana2000.es/tag/siria/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-19 22:13:12,160 INFO:Crawling: https://espana2000.es/2019/02/25/espana2000-apoya-el-mundo-rural/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-19 22:13:15,057 INFO:Crawling: https://espana2000.es/tag/campo/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-19 22:13:17,571 INFO:Crawling: https://espana2000.es/tag/caza/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-19 22:13:19,510 INFO:Crawling: https://espana2000.es/tag/medio-ambiente/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-19 22:13:21,404 INFO:Crawling: https://espana2000.es/tag/mundo-rural/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-19 22:13:22,968 INFO:Crawling: https://espana2000.es/2019/02/07/espana2000-se-adhiere-a-la-manifestacion-por-la-unidad-de-espana-del-proximo-domingo/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-19 22:13:26,031 INFO:Crawling: https://espana2000.es/tag/colon/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-19 22:13:27,720 INFO:Crawling: https://espana2000.es/tag/manifestacion/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-19 22:13:30,123 INFO:Crawling: https://espana2000.es/tag/pedro-sanchez/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-19 22:13:31,879 INFO:Crawling: https://espana2000.es/tag/unidad-de-espana/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-19 22:13:33,432 INFO:Crawling: https://espana2000.es/2019/01/13/espana2000-condena-la-reciente-agresion-israeli-contra-la-nacion-siria/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-19 22:13:35,359 INFO:Crawling: https://espana2000.es/tag/comunicado/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-19 22:13:37,265 INFO:Crawling: https://espana2000.es/tag/guerra/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-19 22:13:39,929 INFO:Crawling: https://espana2000.es/tag/politica-internacional/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-19 22:13:42,209 INFO:Crawling: https://espana2000.es/2018/12/12/la-justicia-da-la-razon-al-concejal-de-espana2000-sandro-algaba-decir-la-verdad-no-es-delito/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-19 22:13:45,242 INFO:Crawling: https://espana2000.es/tag/justicia/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-19 22:13:46,859 INFO:Crawling: https://espana2000.es/tag/marcos-ana/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-19 22:13:48,763 INFO:Crawling: https://espana2000.es/tag/marcos-ana-asesino/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-19 22:13:50,712 INFO:Crawling: https://espana2000.es/tag/memoria-historica/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-19 22:13:52,649 INFO:Crawling: https://espana2000.es/tag/san-fernando-de-henares/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-19 22:13:54,925 INFO:Crawling: https://espana2000.es/tag/sandro-algaba/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-19 22:13:57,849 INFO:Crawling: https://espana2000.es/2018/12/11/espana2000-contra-el-acuerdo-ue-japon-jefta/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-19 22:14:00,103 INFO:Crawling: https://espana2000.es/tag/capitalismo/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-19 22:14:01,758 INFO:Crawling: https://espana2000.es/tag/japon/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-19 22:14:03,643 INFO:Crawling: https://espana2000.es/tag/jefta/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-19 22:14:05,735 INFO:Crawling: https://espana2000.es/tag/libre-comercio/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-20 01:09:12,198 INFO:Crawling: https://espana2000.es/tag/ue/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443 <--denied
+2022-06-20 02:06:06,652 ERROR:Failed to crawl: https://espana2000.es/tag/ue/
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/urllib3/connection.py", line 174, in _new_conn
+    conn = connection.create_connection(
+  File "/usr/lib/python3/dist-packages/urllib3/util/connection.py", line 96, in create_connection
+    raise err
+  File "/usr/lib/python3/dist-packages/urllib3/util/connection.py", line 86, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 704, in urlopen
+    httplib_response = self._make_request(
+  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 387, in _make_request
+    self._validate_conn(conn)
+  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 1043, in _validate_conn
+    conn.connect()
+  File "/usr/lib/python3/dist-packages/urllib3/connection.py", line 358, in connect
+    self.sock = conn = self._new_conn()
+  File "/usr/lib/python3/dist-packages/urllib3/connection.py", line 186, in _new_conn
+    raise NewConnectionError(
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPSConnection object at 0x7fd07491baf0>: Failed to establish a new connection: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/requests/adapters.py", line 440, in send
+    resp = conn.urlopen(
+  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 786, in urlopen
+    retries = retries.increment(
+  File "/usr/lib/python3/dist-packages/urllib3/util/retry.py", line 592, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='espana2000.es', port=443): Max retries exceeded with url: /tag/ue/ (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7fd07491baf0>: Failed to establish a new connection: [Errno 111] Connection refused'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/root/PycharmProjects/spider/spider_2.py", line 43, in run
+    self.crawl(url)
+  File "/root/PycharmProjects/spider/spider_2.py", line 34, in crawl
+    html = self.download_url(url)
+  File "/root/PycharmProjects/spider/spider_2.py", line 19, in download_url
+    return requests.get(url).text
+  File "/usr/lib/python3/dist-packages/requests/api.py", line 75, in get
+    return request('get', url, params=params, **kwargs)
+  File "/usr/lib/python3/dist-packages/requests/api.py", line 61, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/usr/lib/python3/dist-packages/requests/sessions.py", line 529, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/usr/lib/python3/dist-packages/requests/sessions.py", line 645, in send
+    r = adapter.send(request, **kwargs)
+  File "/usr/lib/python3/dist-packages/requests/adapters.py", line 519, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='espana2000.es', port=443): Max retries exceeded with url: /tag/ue/ (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7fd07491baf0>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2022-06-20 02:06:06,747 INFO:Crawling: https://espana2000.es/tag/union-europea/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-20 02:06:12,146 INFO:Crawling: https://espana2000.es/2018/11/27/espana2000-ante-la-actuacion-de-humoristas-antiespanoles-en-valencia/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-20 02:06:13,782 INFO:Crawling: https://espana2000.es/tag/delito-de-odio/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-20 02:06:15,352 INFO:Crawling: https://espana2000.es/tag/extrema-izquierda/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-20 02:06:17,038 INFO:Crawling: https://espana2000.es/tag/generalitat-valenciana/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-20 02:06:18,731 INFO:Crawling: https://espana2000.es/tag/jose-luis-roberto/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-20 02:06:20,303 INFO:Crawling: https://espana2000.es/tag/mongolia/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-20 02:06:20,468 INFO:Crawling: https://espana2000.es/2018/11/09/concentracion-por-la-ofensa-de-dani-mateo-a-todos-los-espanoles/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-20 02:06:22,454 INFO:Crawling: https://espana2000.es/tag/dani-mateo/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-20 02:06:23,976 INFO:Crawling: https://espana2000.es/tag/el-intermedio/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-20 02:06:26,877 INFO:Crawling: https://espana2000.es/tag/la-sexta/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-20 02:06:29,034 INFO:Crawling: https://espana2000.es/author/jose/page/2/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-20 02:06:35,818 INFO:Crawling: https://espana2000.es/author/jose/page/57/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-20 02:06:39,523 INFO:Crawling: https://espana2000.es/tag/2019/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-20 02:06:40,960 INFO:Crawling: https://espana2000.es/tag/congreso/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-20 02:06:42,438 INFO:Crawling: https://espana2000.es/tag/espana2000/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-20 02:06:44,068 INFO:Crawling: https://espana2000.es/2018/10/15/espana2000-participo-en-la-manifestacion-de-stopsucesiones-en-madrid/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-20 02:06:51,905 INFO:Crawling: https://espana2000.es/tag/impuesto-de-sucesiones/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-20 02:06:54,735 INFO:Crawling: https://espana2000.es/tag/pedro-espada/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-20 02:06:56,267 INFO:Crawling: https://espana2000.es/tag/pilar-arroyo/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-20 02:06:58,148 INFO:Crawling: https://espana2000.es/2018/04/03/espana2000-rechaza-el-uso-de-locales-municipales-para-apoyar-a-acusados-de-delitos-de-terrorismo/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-20 02:06:59,624 INFO:Crawling: https://espana2000.es/tag/alcala-de-henares/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-20 02:07:00,973 INFO:Crawling: https://espana2000.es/tag/alsasua/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-20 02:07:02,464 INFO:Crawling: https://espana2000.es/tag/eta/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-20 02:07:04,179 INFO:Crawling: https://espana2000.es/tag/partido-comunista/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-20 02:07:05,850 INFO:Crawling: https://espana2000.es/tag/terrorismo/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-20 02:07:07,312 INFO:Crawling: https://espana2000.es/2017/11/06/respeto-ante-las-elecciones-autonomicas-catalanas-del-21d/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-20 02:07:08,962 INFO:Crawling: https://espana2000.es/tag/elecciones/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-20 02:07:10,623 INFO:Crawling: https://espana2000.es/tag/plataforma-per-catalunya/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-20 02:07:12,388 INFO:Crawling: https://espana2000.es/tag/plataforma-por-cataluna/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-20 02:07:14,171 INFO:Crawling: https://espana2000.es/tag/espana2000/page/2/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-20 02:07:16,392 INFO:Crawling: https://espana2000.es/tag/rafael-ripoll/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-20 02:07:18,230 INFO:Crawling: https://espana2000.es/2016/10/14/respeto-en-alcala-de-henares-celebra-el-12-de-octubre/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-20 02:07:22,877 INFO:Crawling: https://espana2000.es/tag/12-de-octubre/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-20 02:07:30,246 INFO:Crawling: https://espana2000.es/2015/12/22/feliz-navidad-a-todos-los-militantes-y-simpatizantes-de-espana2000/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-20 02:07:32,625 INFO:Crawling: https://espana2000.es/tag/identidad/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-20 02:07:37,445 INFO:Crawling: https://espana2000.es/2015/12/08/los-vocales-de-espana2000-toman-su-cargo-en-las-juntas-municipales-de-distrito/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-20 02:07:39,256 INFO:Crawling: https://espana2000.es/tag/jesus-padilla/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-20 02:07:40,547 INFO:Crawling: https://espana2000.es/tag/jose-luis-encabo/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-20 02:07:41,654 INFO:Crawling: https://espana2000.es/tag/tamar-gonzalez/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-20 02:07:43,161 INFO:Crawling: https://espana2000.es/2015/11/16/espana2000-por-la-defensa-del-patrimonio-y-la-promocion-turistica-de-alcala/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-20 02:07:47,746 INFO:Crawling: https://espana2000.es/tag/patrimonio/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-20 02:07:49,434 INFO:Crawling: https://espana2000.es/tag/turismo/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-20 02:07:50,740 INFO:Crawling: https://espana2000.es/2015/10/22/rafael-ripoll-entrevistado-en-el-semanario-puerta-de-madrid/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-20 02:07:51,949 INFO:Crawling: https://espana2000.es/tag/apariciones-en-prensa/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-20 02:07:53,361 INFO:Crawling: https://espana2000.es/2015/10/20/espana2000-quiere-evitar-el-fraude-en-el-padron-municipal/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-20 02:07:54,975 INFO:Crawling: https://espana2000.es/tag/inmigracion/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-20 02:07:56,276 INFO:Crawling: https://espana2000.es/tag/rafael-ripoll/page/2/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-20 02:07:57,576 INFO:Crawling: https://espana2000.es/tag/rafael-ripoll/page/10/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-20 02:07:59,044 INFO:Crawling: https://espana2000.es/category/activismo/campanas/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-20 02:08:01,740 INFO:Crawling: https://espana2000.es/2021/03/23/campana-de-banderas-gobierno-dimision/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-20 02:08:03,062 INFO:Crawling: https://espana2000.es/2020/05/23/seguimos-homenajeando-a-las-victimas-del-covid-19/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-20 02:08:05,412 INFO:Crawling: https://espana2000.es/2018/04/09/la-guardia-civil-saca-a-joan-tarda-erc-por-la-puerta-trasera-del-auditorio-de-vinaroz/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-20 02:08:10,649 INFO:Crawling: https://espana2000.es/2018/03/21/ataque-a-las-escuelas-oficiales-de-idiomas/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-20 02:08:11,933 INFO:Crawling: https://espana2000.es/tag/educacion/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-20 02:08:16,793 INFO:Crawling: https://espana2000.es/tag/educacion-publica/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-20 02:08:19,444 INFO:Crawling: https://espana2000.es/tag/idiomas/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-20 02:08:21,260 INFO:Crawling: https://espana2000.es/2018/03/07/espana2000-apoya-a-los-trabajadores-de-amazon/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-20 02:08:22,786 INFO:Crawling: https://espana2000.es/tag/amazon/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-20 02:08:24,078 INFO:Crawling: https://espana2000.es/tag/corredor-del-henares/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-20 02:08:35,258 INFO:Crawling: https://espana2000.es/tag/huelga/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-20 02:08:37,571 INFO:Crawling: https://espana2000.es/2018/02/09/nomassiniestralidad/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-20 02:08:38,962 INFO:Crawling: https://espana2000.es/tag/empleo/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-20 02:08:49,543 INFO:Crawling: https://espana2000.es/tag/lucha-obrera/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-20 02:08:59,498 INFO:Crawling: https://espana2000.es/tag/precariedad-laboral/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-20 02:09:03,951 INFO:Crawling: https://espana2000.es/tag/seguridada/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-20 02:09:05,460 INFO:Crawling: https://espana2000.es/category/activismo/campanas/page/2/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-20 02:09:06,784 INFO:Crawling: https://espana2000.es/category/activismo/campanas/page/5/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-20 02:09:08,182 INFO:Crawling: https://espana2000.es/category/multimedia/propaganda/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-20 02:09:10,063 INFO:Crawling: https://espana2000.es/2018/05/14/espana2000-en-la-manifestacion-de-45-sin-despidos-en-madrid/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-20 02:09:14,545 INFO:Crawling: https://espana2000.es/tag/45-sin-despidos/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-20 02:09:16,901 INFO:Crawling: https://espana2000.es/2018/04/23/defiende-valencia/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-20 02:09:18,298 INFO:Crawling: https://espana2000.es/tag/compromis/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-20 02:09:21,821 INFO:Crawling: https://espana2000.es/tag/defiende-valencia/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-20 02:09:27,978 INFO:Crawling: https://espana2000.es/category/multimedia/fotos/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-20 02:09:33,299 INFO:Crawling: https://espana2000.es/2017/11/03/carmena-contra-la-equiparacion-salarial-que-reclama-guardia-civil-y-cuerpo-nacional-de-policia/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-20 02:09:49,077 INFO:Crawling: https://espana2000.es/2017/09/13/ya-no-es-hora-de-reformas-es-momento-de-refundacion/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-20 02:10:00,667 INFO:Crawling: https://espana2000.es/2017/05/11/caravana-anticorrupcion-en-valencia/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-20 02:10:07,920 INFO:Crawling: https://espana2000.es/2017/04/05/el-psoe-vota-a-favor-de-una-propuesta-de-espana2000-por-primera-vez-desde-2011/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-20 02:10:10,987 INFO:Crawling: https://espana2000.es/2018/05/15/reunion-del-consejo-ejecutivo-de-respeto-en-zaragoza/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-20 02:10:12,829 INFO:Crawling: http://espana2000.org/wp-content/uploads/2018/05/Reunión-consejo-ejecutivo-Respeto-mayo-2018-e1526381711137.jpeg
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.org:80  ...  OK
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.org:443  ...  OK
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  www.espana2000.es:80  ...  OK
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  www.espana2000.es:443  ...  OK
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-20 02:10:20,894 INFO:Crawling: http://espana2000.org/wp-content/uploads/2018/05/Reunión-consejo-ejecutivo-zaragoza-13-d-emayo-2018-2-e1526380288886.jpeg
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.org:80  ...  OK
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.org:443  ...  OK
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  www.espana2000.es:80  ...  OK
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  www.espana2000.es:443  ...  OK
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-20 02:10:25,029 INFO:Crawling: https://espana2000.es/tag/ayuda-a-espanoles/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-20 02:10:27,741 INFO:Crawling: https://espana2000.es/2015/05/18/se-paraliza-el-desalojo-del-h-s-p-maria-luisa-navarro/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-20 02:10:29,915 INFO:Crawling: https://espana2000.es/2015/05/16/rita-barbera-quiere-desalojar-el-hogar-social-patriota-de-valencia/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-20 02:10:31,279 INFO:Crawling: https://espana2000.es/2015/04/13/reparto-de-alimentos-a-familias-espanolas-en-valencia-2/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-20 02:10:32,791 INFO:Crawling: https://espana2000.es/2015/03/12/reparto-de-alimentos-para-espanoles-en-massamagrell/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-20 02:10:33,926 INFO:Crawling: https://espana2000.es/tag/massamagrell/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-20 02:10:35,235 INFO:Crawling: https://espana2000.es/2015/01/07/la-sonrisa-de-los-ninos-conquisto-el-h-s-p-maria-luisa-navarro/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-20 02:10:38,771 INFO:Crawling: https://espana2000.es/2015/01/06/espana2000-repartio-los-juguetes-en-san-fernando-pese-a-la-prohibicion-del-alcalde/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-20 02:10:41,642 INFO:Crawling: https://espana2000.es/2014/12/31/el-alcalde-de-san-fernando-de-henares-prohibe-un-reparto-de-juguetes/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-20 02:10:46,792 INFO:Crawling: https://espana2000.es/tag/comunicados/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-20 02:11:02,333 INFO:Crawling: https://espana2000.es/2014/12/10/espana2000-ante-las-declaraciones-del-alcalde-de-onda/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-20 02:11:18,809 INFO:Crawling: https://espana2000.es/tag/onda/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-20 02:11:38,930 INFO:Crawling: https://espana2000.es/2014/12/09/una-madre-espanola-denuncia-la-endofobia-del-alcalde-de-onda/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-20 02:11:51,313 INFO:Crawling: https://espana2000.es/tag/endofobia/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-20 02:11:55,644 INFO:Crawling: https://espana2000.es/tag/santiago-bojados/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-20 02:12:00,146 INFO:Crawling: https://espana2000.es/tag/ayuda-a-espanoles/page/2/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-20 02:12:03,891 INFO:Crawling: https://espana2000.es/tag/ayuda-a-espanoles/page/6/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-20 02:12:05,926 INFO:Crawling: https://espana2000.es/tag/fuensanta-martin/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-20 02:12:07,359 INFO:Crawling: https://espana2000.es/tag/mario-martos/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-20 02:12:12,474 INFO:Crawling: https://espana2000.es/tag/respeto/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-20 02:12:14,095 INFO:Crawling: https://espana2000.es/tag/reuniones-de-equipo/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-20 02:12:15,307 INFO:Crawling: https://espana2000.es/tag/zaragoza/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-20 02:12:16,731 INFO:Crawling: https://espana2000.es/2015/09/30/inauguracion-de-la-sede-de-espana2000-en-zaragoza/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-20 02:12:18,266 INFO:Crawling: https://espana2000.es/tag/jose-antonio-ocio/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-20 02:12:19,848 INFO:Crawling: https://espana2000.es/tag/julian-moreno/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-20 02:12:22,458 INFO:Crawling: https://espana2000.es/2014/06/10/espana2000-sobre-la-colocacion-de-la-tricolor-en-el-ayuntamiento-de-zaragoza/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-20 02:12:23,868 INFO:Crawling: https://espana2000.es/2013/04/12/presentacion-de-la-delegacion-de-espana2000-en-aragon/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-20 02:12:29,027 INFO:Crawling: https://espana2000.es/tag/angel-rafael-cipres/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-20 02:12:34,659 INFO:Crawling: https://espana2000.es/tag/huesca/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-20 02:12:38,500 INFO:Crawling: https://espana2000.es/tag/jose-javier-amar/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-20 02:12:43,581 INFO:Crawling: https://espana2000.es/tag/juan-oliva/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-20 02:12:45,320 INFO:Crawling: https://espana2000.es/category/activismo/manifestaciones/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-20 02:12:46,895 INFO:Crawling: https://espana2000.es/2021/11/14/300-patriotas-se-manifiestan-en-valencia-a-pesar-de-las-trabas-administrativas/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-20 02:12:48,529 INFO:Crawling: https://espana2000.es/2021/10/27/marcha-de-las-antorchas/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-20 02:12:52,524 INFO:Crawling: https://espana2000.es/2021/09/19/mas-de-500-patriotas-marchan-contra-las-agendas-2030-y-2050/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-20 02:12:57,422 INFO:Crawling: https://espana2000.es/tag/agenda2050/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-20 02:13:01,823 INFO:Crawling: https://espana2000.es/tag/chueca/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-20 02:13:06,770 INFO:Crawling: https://espana2000.es/2021/09/05/manifestacion-contra-las-agendas-2030-y-2050/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-20 02:13:11,315 INFO:Crawling: https://espana2000.es/tag/madrid/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-20 02:13:17,612 INFO:Crawling: https://espana2000.es/category/activismo/manifestaciones/page/2/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-20 02:13:21,560 INFO:Crawling: https://espana2000.es/category/activismo/manifestaciones/page/10/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-20 02:13:23,266 INFO:Crawling: https://espana2000.es/category/politica-municipal/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-20 02:13:25,046 INFO:Crawling: https://espana2000.es/2017/10/30/y-despues-que/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-20 02:13:27,860 INFO:Crawling: https://espana2000.es/tag/independencia/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-20 02:13:30,766 INFO:Crawling: https://espana2000.es/category/politica-municipal/page/2/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-20 02:13:32,065 INFO:Crawling: https://espana2000.es/category/politica-municipal/page/15/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-20 02:13:33,324 INFO:Crawling: https://espana2000.es/category/prensa/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-20 02:13:35,322 INFO:Crawling: https://espana2000.es/2022/04/01/el-juez-pide-al-tsj-que-impute-a-monica-oltra-por-el-caso-de-su-marido/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-20 02:13:39,443 INFO:Crawling: https://espana2000.es/2022/03/09/el-centro-ies-el-saler-promueve-la-no-asistencia-a-clase-para-ir-al-8m/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-20 02:13:43,708 INFO:Crawling: https://espana2000.es/2022/02/28/espana-2000-presenta-una-denuncia-en-el-instituto-les-alfabegues-de-betera/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-20 02:13:48,643 INFO:Crawling: https://espana2000.es/2022/02/05/ximo-puig-anuncia-que-mantendra-el-pasaporte-covid-hasta-marzo/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-20 02:13:53,568 INFO:Crawling: https://espana2000.es/2022/02/01/el-ayuntamiento-da-licencia-al-micalet-sin-investigar-la-falta-de-permisos/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-20 02:13:58,074 INFO:Crawling: https://espana2000.es/2022/01/23/los-agricultores-valencianos-regalan-la-naranja-mientras-la-union-europea-apoya-a-los-citricos-sudafricanos/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-20 02:14:04,018 INFO:Crawling: https://espana2000.es/tag/agricultura/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-20 02:14:09,500 INFO:Crawling: https://espana2000.es/category/prensa/page/2/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-20 02:14:11,875 INFO:Crawling: https://espana2000.es/category/prensa/page/31/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-20 02:14:13,879 INFO:Crawling: https://espana2000.es/2017/12/05/espana2000-apoya-la-equiparacion-salarial-que-reclaman-policias-y-guardias-civiles/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-20 02:14:15,555 INFO:Crawling: https://espana2000.es/2018/01/12/carta-abierta-de-las-mujeres-de-espana2000-respeto-a-sabina-vega/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-20 02:14:19,049 INFO:Crawling: https://espana2000.es/category/colabora-con-nosotros/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-20 02:14:20,830 INFO:Crawling: https://espana2000.es/2022/01/07/llevamos-carbon-a-la-conselleria-de-oltra/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-20 02:14:22,238 INFO:Crawling: https://espana2000.es/tag/abusos/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-20 02:14:28,607 INFO:Crawling: https://espana2000.es/2021/11/08/entrevista-a-jose-luis-roberto-en-8tv/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-20 02:14:33,455 INFO:Crawling: https://espana2000.es/tag/8tv/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-20 02:14:37,907 INFO:Crawling: https://espana2000.es/2021/10/28/entrevista-a-jose-luis-roberto-en-el-toro-tv/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-20 02:14:42,949 INFO:Crawling: https://espana2000.es/2021/10/14/entrevista-a-teresa-la-menor-de-la-que-abuso-sexualmente-el-ex-marido-de-oltra/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-20 02:14:48,372 INFO:Crawling: https://espana2000.es/2021/10/12/desplegamos-una-de-las-banderas-de-espana-mas-grandes-del-mundo-el-dia-de-la-hispanidad/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-20 02:14:50,633 INFO:Crawling: https://espana2000.es/2021/09/08/jose-luis-roberto-acude-a-declarar-por-un-delito-de-odio/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-20 02:14:52,595 INFO:Crawling: https://espana2000.es/2021/07/18/espana-2000-reune-a-un-centenar-de-patriotas-en-la-cena-de-fin-del-curso-politico/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-20 02:14:54,466 INFO:Crawling: https://espana2000.es/2021/07/13/entrevista-a-maite-la-menor-que-sufrio-abusos-por-parte-del-exmarido-de-oltra/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-20 02:14:55,842 INFO:Crawling: https://espana2000.es/category/multimedia/page/2/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-20 02:14:57,432 INFO:Crawling: https://espana2000.es/category/multimedia/page/5/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-20 02:14:58,711 INFO:Crawling: https://espana2000.es/2017/10/30/el-2-de-mayo-catalan/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-20 02:15:00,118 INFO:Crawling: https://espana2000.es/2017/10/19/musica-y-alegria-frente-al-odio-separatista/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-20 02:15:03,043 INFO:Crawling: https://espana2000.es/tag/1-de-octubre/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-20 02:15:04,866 INFO:Crawling: https://espana2000.es/tag/2-de-mayo/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-20 02:15:06,291 INFO:Crawling: https://espana2000.es/tag/cataluna/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-20 02:15:07,909 INFO:Crawling: https://espana2000.es/tag/escrache/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-20 02:15:09,453 INFO:Crawling: https://espana2000.es/tag/independentistas/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-20 02:15:10,621 INFO:Crawling: https://espana2000.es/2016/01/18/la-agonia-del-delirio-de-la-obsesion-separatista/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-20 02:15:12,988 INFO:Crawling: https://espana2000.es/tag/no-al-separatismo/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-20 02:15:17,935 INFO:Crawling: https://espana2000.es/2015/11/10/contra-la-declaracion-aprobada-por-el-parlament-de-catalunya/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-20 02:15:21,196 INFO:Crawling: https://espana2000.es/2014/10/15/espana2000-ante-las-declaraciones-de-artur-mas/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-20 02:15:23,390 INFO:Crawling: https://espana2000.es/2013/09/12/espana2000-mostro-su-rechazo-a-la-via-catalana-en-vinaros/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-20 02:15:25,024 INFO:Crawling: https://espana2000.es/tag/castellon/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-20 02:15:28,932 INFO:Crawling: https://espana2000.es/tag/vinaros/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-20 02:15:30,448 INFO:Crawling: https://espana2000.es/tag/separatismo/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-20 02:15:32,060 INFO:Crawling: https://espana2000.es/2017/09/07/junts-fem-forca-el-referendum-de-la-casta-no-es-para-cataluna/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-20 02:15:34,460 INFO:Crawling: https://espana2000.es/2017/08/18/4233/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-20 02:15:37,310 INFO:Crawling: https://espana2000.es/category/prensa/apariciones/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-20 02:15:39,635 INFO:Crawling: https://espana2000.es/2017/02/01/el-psoe-aboga-por-los-francotiradores/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-20 02:15:41,532 INFO:Crawling: https://espana2000.es/2017/02/01/los-municipios-sufren-las-politicas-internacionales/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-20 02:15:43,278 INFO:Crawling: https://espana2000.es/2017/01/09/valenciana-y-espanola/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-20 02:15:45,218 INFO:Crawling: https://espana2000.es/2016/05/20/rosell-el-presidente-bruto-de-la-patronal/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-20 02:15:46,779 INFO:Crawling: https://espana2000.es/2016/04/25/la-federacion-respeto-recibe-el-apoyo-de-la-lider-tatjana-festerling-pegida/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-20 02:15:48,293 INFO:Crawling: https://espana2000.es/category/prensa/apariciones/page/2/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-20 02:15:50,013 INFO:Crawling: https://espana2000.es/category/prensa/apariciones/page/7/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-20 02:15:51,623 INFO:Crawling: https://espana2000.es/2017/07/11/se-acabo-la-impunidad-condena-a-ynestrillas-por-injurias-contra-jose-luis-roberto/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-20 02:15:53,060 INFO:Crawling: https://espana2000.es/2017/06/08/la-nueva-esclavitud-laboral-uber-y-cabify/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-20 02:15:56,964 INFO:Crawling: https://espana2000.es/category/mujer/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-20 02:16:01,461 INFO:Crawling: https://espana2000.es/2018/03/06/espana2000-respeto-no-apoya-la-huelga-del-8-de-marzo/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-20 02:16:05,713 INFO:Crawling: https://espana2000.es/tag/mujer/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-20 02:16:08,328 INFO:Crawling: https://espana2000.es/tag/stop-islam/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-20 02:16:10,149 INFO:Crawling: https://espana2000.es/2017/03/09/somos-mujeres-somos-espanolas/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-20 02:16:11,979 INFO:Crawling: https://espana2000.es/category/activismo/ayuda-a-espanoles/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-20 02:16:13,387 INFO:Crawling: https://espana2000.es/2021/02/22/la-menor-que-sufrio-abusos-por-parte-del-ex-marido-de-monica-oltra-en-situacion-precaria/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-20 02:16:14,569 INFO:Crawling: https://espana2000.es/2020/04/27/reparto-de-alimentos/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-20 02:16:16,038 INFO:Crawling: https://espana2000.es/2020/04/27/reparto-de-alimentos/#respond
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-20 02:16:17,601 INFO:Crawling: https://espana2000.es/tag/justicia-social/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-20 02:16:21,387 INFO:Crawling: https://espana2000.es/2017/01/10/eurodiputados-que-traicionan-a-espana/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-20 02:16:23,290 INFO:Crawling: https://espana2000.es/2016/07/05/la-resaca-del-brexit/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-20 02:16:24,807 INFO:Crawling: https://espana2000.es/2016/03/30/espana2000-con-los-trabajadores-de-lauki/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-20 02:16:27,320 INFO:Crawling: https://espana2000.es/category/activismo/ayuda-a-espanoles/page/2/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-20 02:16:29,320 INFO:Crawling: https://espana2000.es/category/activismo/ayuda-a-espanoles/page/6/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-20 02:16:30,598 INFO:Crawling: https://espana2000.es/2017/02/28/espana2000-con-los-estibadores/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-20 02:16:32,233 INFO:Crawling: https://espana2000.es/2017/02/27/espana2000-protesta-contra-los-abusos-de-las-electricas/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-20 02:16:34,229 INFO:Crawling: https://espana2000.es/tag/defensa-derechos/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-20 02:16:35,820 INFO:Crawling: https://espana2000.es/tag/derechos-laborales/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-20 02:16:37,474 INFO:Crawling: https://espana2000.es/tag/espana/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-20 02:16:39,168 INFO:Crawling: https://espana2000.es/tag/estibadores/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-20 02:16:40,543 INFO:Crawling: https://espana2000.es/2017/02/08/necesitamos-una-banca-publica/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-20 02:16:42,105 INFO:Crawling: https://espana2000.es/tag/astuias/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-20 02:16:43,631 INFO:Crawling: https://espana2000.es/tag/banca-publica/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-20 02:16:46,276 INFO:Crawling: https://espana2000.es/tag/economia/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-20 02:16:48,406 INFO:Crawling: https://espana2000.es/2016/12/07/bruno-navarro-sobre-la-amenaza-yihadista-en-espana/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-20 02:16:49,904 INFO:Crawling: https://espana2000.es/tag/conferencias/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-20 02:16:51,810 INFO:Crawling: https://espana2000.es/tag/documentos-politicos/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-20 02:16:53,487 INFO:Crawling: https://espana2000.es/tag/seguridad-ciudadana/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-20 02:16:54,965 INFO:Crawling: https://espana2000.es/tag/yihadismo/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-20 02:16:56,648 INFO:Crawling: https://espana2000.es/2016/05/02/representacion-tragicomica-del-1-de-mayo/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-20 02:16:58,948 INFO:Crawling: https://espana2000.es/2016/01/14/ideas-claras-ante-la-invasion/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-20 02:17:02,545 INFO:Crawling: https://espana2000.es/tag/islam/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-20 02:17:03,861 INFO:Crawling: https://espana2000.es/2015/11/24/la-precariedad-laboral-pone-en-peligro-la-lucha-antiterrorista/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-20 02:17:05,797 INFO:Crawling: https://espana2000.es/tag/refugiados/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-20 02:17:07,788 INFO:Crawling: https://espana2000.es/2015/10/16/espana2000-por-una-alternativa-real-al-sistema-politico-y-economico-actual/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-20 02:17:10,970 INFO:Crawling: https://espana2000.es/2015/07/19/la-capitulacion-ante-la-ue-de-syriza-y-podemos/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-20 02:17:12,952 INFO:Crawling: https://espana2000.es/category/documentos/page/3/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-20 02:17:14,865 INFO:Crawling: https://espana2000.es/2013/02/12/islamismo-y-control-censal/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-20 02:17:16,201 INFO:Crawling: https://espana2000.es/tag/manuel-montes/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-20 02:17:17,970 INFO:Crawling: https://espana2000.es/2013/01/23/orientaciones-para-los-militantes-y-nuevos-afiliados/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-20 02:17:19,539 INFO:Crawling: https://espana2000.es/2012/12/28/el-general-prim-y-el-11m/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-20 02:17:21,000 INFO:Crawling: https://espana2000.es/tag/11m/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-20 02:17:22,700 INFO:Crawling: https://espana2000.es/2012/09/01/espana2000-ante-el-rescate-bancario/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-20 02:17:24,483 INFO:Crawling: https://espana2000.es/2012/09/01/la-crisis-del-regimen-de-1978-fin-del-unilateralismo-usa-orientaciones-estrategicas/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-20 02:17:27,361 INFO:Crawling: https://espana2000.es/tag/junta-nacional/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-20 02:17:29,981 INFO:Crawling: https://espana2000.es/category/documentos/page/5/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-20 02:17:31,909 INFO:Crawling: https://espana2000.es/2022/05/16/fiestas-de-san-isidro-en-los-santos-de-la-humosa/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-20 02:17:33,456 INFO:Crawling: https://espana2000.es/2022/05/15/esther-romero-nueva-delegada-de-espana-2000-en-la-comarca-valenciana-de-lhorta-nord/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-20 02:17:35,196 INFO:Crawling: https://espana2000.es/2022/02/20/espana-2000-con-nuestros-mayores/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-20 02:17:36,761 INFO:Crawling: https://espana2000.es/2022/02/20/torpedoro-y-sus-mariachis/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-20 02:17:38,587 INFO:Crawling: https://espana2000.es/2021/10/12/dia-de-la-hispanidad-en-onda/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-20 02:17:40,345 INFO:Crawling: https://espana2000.es/2021/10/10/el-salvaje-y-el-mundo-feliz/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-20 02:17:42,510 INFO:Crawling: https://espana2000.es/2021/03/06/jose-francisco-borja-esteve-nuevo-presidente-de-espana-2000-sollana/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-20 02:17:44,070 INFO:Crawling: https://espana2000.es/2021/03/03/espana-2000-con-los-pirotecnicos-valencianos/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-20 02:17:45,565 INFO:Crawling: https://espana2000.es/2021/03/07/el-pichi-de-marzo/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-20 02:17:47,424 INFO:Crawling: https://espana2000.es/2021/02/11/espana-2000-solicita-la-construccion-de-un-hospital-en-la-comarca-de-la-ribera-baja/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-20 02:17:49,700 INFO:Crawling: https://espana2000.es/2021/02/10/78-aniversario-de-la-batalla-de-krasny-bor/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-20 02:17:51,546 INFO:Crawling: https://espana2000.es/2021/02/13/juventud-nacional-en-el-homenaje-a-los-caidos-por-europa/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-20 02:17:53,274 INFO:Crawling: https://espana2000.es/tag/hospital/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-20 02:17:54,967 INFO:Crawling: https://espana2000.es/tag/ribera-baja/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-20 02:17:56,624 INFO:Crawling: https://espana2000.es/tag/sollana/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-20 02:17:58,248 INFO:Crawling: https://espana2000.es/2015/05/13/la-policia-local-indentifico-a-los-autores-de-un-delito-electoral-contra-espana2000/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-20 02:17:59,756 INFO:Crawling: https://espana2000.es/tag/juan-v-estarelles/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-20 02:18:02,640 INFO:Crawling: https://espana2000.es/2015/03/29/amenaza-de-bomba-en-la-presentacion-de-la-candidatura-de-espana2000-en-sollana/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-20 02:18:04,355 INFO:Crawling: https://espana2000.es/2015/02/03/valencia-homenajea-a-la-junta-local-de-sollana/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-20 02:18:06,347 INFO:Crawling: https://espana2000.es/2014/06/12/acto-conmemorativo-de-la-ong-hsp-maria-luisa-navarro/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-20 02:18:08,026 INFO:Crawling: https://espana2000.es/tag/alaquas/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-20 02:18:09,995 INFO:Crawling: https://espana2000.es/tag/torrent/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-20 02:18:12,203 INFO:Crawling: https://espana2000.es/2014/05/05/jornada-festiva-el-1o-de-mayo-en-sollana/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-20 02:18:14,435 INFO:Crawling: https://espana2000.es/tag/preferencia-nacional/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-20 02:18:15,917 INFO:Crawling: https://espana2000.es/tag/vicente-marti/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-20 02:18:17,705 INFO:Crawling: https://espana2000.es/2014/01/05/el-hsp-maria-luisa-navarro-ha-atendido-a-mas-de-200-familias-en-2013/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-20 02:18:19,443 INFO:Crawling: https://espana2000.es/2013/11/27/presentacion-en-sollana-de-la-ong-h-s-p-ma-luisa-navarro/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-20 02:18:21,336 INFO:Crawling: https://espana2000.es/2013/06/16/ciclo-de-mesas-informativas-en-la-provincia-de-valencia/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-20 02:18:23,223 INFO:Crawling: https://espana2000.es/tag/campanas/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-20 02:18:24,903 INFO:Crawling: https://espana2000.es/tag/sueca/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-20 02:18:32,581 INFO:Crawling: https://espana2000.es/tag/xirivella/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-20 02:18:34,215 INFO:Crawling: https://espana2000.es/2013/03/12/presentacion-sede-espana2000-sollana/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-20 02:18:37,019 INFO:Crawling: https://espana2000.es/tag/sollana/page/2/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-20 02:18:39,259 INFO:Crawling: https://espana2000.es/category/multimedia/videos/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-20 02:18:41,458 INFO:Crawling: https://espana2000.es/category/multimedia/videos/page/2/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-20 02:18:43,317 INFO:Crawling: https://espana2000.es/category/multimedia/videos/page/4/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-20 02:18:45,179 INFO:Crawling: https://espana2000.es/2021/01/28/se-constituye-nueva-junta-local-en-alzira/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-20 02:18:46,893 INFO:Crawling: https://espana2000.es/2021/01/26/espana-2000-apoya-las-reivindicaciones-de-los-hosteleros/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-20 02:18:48,426 INFO:Crawling: https://espana2000.es/2021/01/28/espana-2000-se-concentra-en-defensa-de-la-hosteleria/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-20 02:18:49,729 INFO:Crawling: https://espana2000.es/tag/alzira/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-20 02:18:51,670 INFO:Crawling: https://espana2000.es/2012/11/05/ciclo-de-mesas-informativas-en-la-comarca-de-la-ribera-alta/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-20 02:18:53,877 INFO:Crawling: https://espana2000.es/tag/carlet/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-20 02:18:55,828 INFO:Crawling: https://espana2000.es/tag/lalcudia/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-20 02:18:57,404 INFO:Crawling: https://espana2000.es/2012/09/23/constitucion-junta-comarcal-de-la-ribera/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-20 02:18:59,510 INFO:Crawling: https://espana2000.es/tag/guadassuar/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-20 02:19:02,460 INFO:Crawling: https://espana2000.es/tag/jose-sanchez-chacon/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-20 02:19:04,088 INFO:Crawling: https://espana2000.es/2020/12/16/firma-del-primer-convenio-laboral-en-la-historia-de-los-santos-de-la-humosa/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-20 02:19:05,358 INFO:Crawling: https://espana2000.es/2020/12/13/las-nuevas-chicas-de-la-cruz-roja/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-20 02:19:06,798 INFO:Crawling: https://espana2000.es/2020/12/16/s-o-s-parque-natural-de-la-albufera/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-20 02:19:08,239 INFO:Crawling: https://espana2000.es/2020/11/27/reunion-de-trabajo-en-los-santos-de-la-humosa/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-20 02:19:09,734 INFO:Crawling: https://espana2000.es/2020/11/22/las-invasiones-barbaras-ii-la-izquierda-cumbaya/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-20 02:19:11,522 INFO:Crawling: https://espana2000.es/2020/11/29/__trashed-2/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-20 02:19:13,208 INFO:Crawling: https://espana2000.es/2020/08/30/tradicional-subida-de-la-virgen-de-la-humosa/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-20 02:19:14,774 INFO:Crawling: https://espana2000.es/2020/08/25/jose-luis-roberto-presenta-su-candidatura-a-la-presidencia-de-espana-2000/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-20 02:19:16,315 INFO:Crawling: https://espana2000.es/2020/09/05/la-libreta-de-la-abuela-amparin/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-20 02:19:18,252 INFO:Crawling: https://espana2000.es/2020/07/09/cena-de-camaraderia/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-20 02:19:19,729 INFO:Crawling: https://espana2000.es/2020/04/28/el-psoe-se-niega-a-bajarse-el-sueldo-para-combatir-el-covid-19/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-20 02:19:21,442 INFO:Crawling: https://espana2000.es/2020/04/28/el-psoe-se-niega-a-bajarse-el-sueldo-para-combatir-el-covid-19/#respond
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-20 02:19:23,589 INFO:Crawling: https://espana2000.es/tag/velilla-de-san-antonio/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-20 02:19:25,457 INFO:Crawling: https://espana2000.es/2018/03/17/arganda-del-rey-ya-cuenta-con-delegacion-de-espana2000-respeto/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-20 02:19:27,203 INFO:Crawling: https://espana2000.es/category/juntas-locales/page/3/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-20 02:19:29,970 INFO:Crawling: https://espana2000.es/2012/10/14/12-de-octubre-de-2012-valencia/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-20 02:19:31,966 INFO:Crawling: https://espana2000.es/2012/10/11/mociones-de-espana2000-alcala-en-el-pleno-de-octubre/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-20 02:19:33,630 INFO:Crawling: https://espana2000.es/2012/10/11/espana2000-participo-en-el-9-doctubre-en-valencia/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-20 02:19:35,412 INFO:Crawling: https://espana2000.es/2012/10/10/nueva-entrega-de-alimentos-de-la-ong-hsp-maria-luisa-navarro/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-20 02:19:37,165 INFO:Crawling: https://espana2000.es/2012/09/19/mesa-para-recogida-de-libros-de-texto-en-onda/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-20 02:19:39,087 INFO:Crawling: https://espana2000.es/category/juntas-locales/page/24/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-20 02:19:40,730 INFO:Crawling: https://espana2000.es/blog/4/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-20 02:19:42,999 INFO:Crawling: https://espana2000.es/blog/5/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-20 02:19:45,342 INFO:Crawling: https://espana2000.es/blog/8/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
+2022-06-20 02:19:47,400 INFO:Crawling: https://espana2000.es/blog/9/
+[proxychains] Dynamic chain  ...  127.0.0.1:9050  ...  espana2000.es:443  ...  OK
