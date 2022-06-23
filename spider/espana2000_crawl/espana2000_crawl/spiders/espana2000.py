@@ -23,3 +23,4 @@ class Espana2000(CrawlSpider):
                 syntaxes=['opengraph', 'json-ld']
             ),
         }
+# scrapy runspider espana200.py
