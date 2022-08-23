@@ -6,6 +6,7 @@ import argparse
 # import os
 # import time
 
+
 def get_arguments():
     parser = argparse.ArgumentParser()
     parser.add_argument("-t", "--target", dest="IP", help="IP adress to ask for its MAC address")
@@ -32,10 +33,12 @@ def scan(ip):
 
     return clients_list
 
+
 def print_result(result_list):
     print("IP\t\t\tMAC Address\n------------------------------------")
     for client in result_list:
         print(client["ip"] + "\t\t" + client["mac"])
+
 
 try:
     options = get_arguments()

