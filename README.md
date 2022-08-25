@@ -2,7 +2,7 @@
 
 ![portada](https://github.com/Origamologo/Paedicabo/blob/main/images/portada.jpg)
 
-> *Paedicabo ego vos et Irrumabo*
+> *Paedicabo ego vos et irumabo*
 > > (CATULO, Carmen 16)
 
 Data analysis and cyber security
