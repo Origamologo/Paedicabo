@@ -20,6 +20,8 @@ NEWSPIDER_MODULE = 'web_crawl.spiders'
 
 # Obey robots.txt rules
 ROBOTSTXT_OBEY = False
+FEED_FORMAT="csv"
+FEED_URI="aliexpress.csv"
 
 # Configure maximum concurrent requests performed by Scrapy (default: 16)
 #CONCURRENT_REQUESTS = 32
